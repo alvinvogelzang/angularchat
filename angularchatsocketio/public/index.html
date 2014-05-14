@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html ng-app="chatApp">
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Alvin's chat app</title>
+		<script src="/socket.io/socket.io.js"></script>
+		<script src="angular/angular.min.js"></script>
+		<script src="main.js"></script>
+		<link href='http://fonts.googleapis.com/css?family=Roboto:400,100' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Gorditas:400,700' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="style.css"/>
+	</head>
+	<body>
+		<div class="container">
+			<h1>Alvin's chat app</h1>
+			
+			<div ng-controller="ChatCtrl">
+				<div id="chatWrap">
+					<div ng-repeat="msg in msgs track by $index" class="messageContainer">
+						<h3>{{msg.name}}</h3>
+						<p>{{msg.text}}</p>
+					</div>
+				</div>
+				<form ng-submit="sendMsg();" action="">
+					<input type="text" ng-model="msg.name" placeholder="Naam" class="name"/>
+					<input type="text" ng-model="msg.text" placeholder="Bericht" class="message"/>
+					<input type="submit" class="btn btn-default"/>
+				</form>
+			</div>
+		</div>
+
+	</body>
+</html>

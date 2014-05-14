@@ -1,0 +1,42 @@
+{
+  "name": "angular-primus",
+  "version": "0.2.2",
+  "homepage": "https://github.com/neoziro/angular-primus",
+  "authors": [
+    "Greg Bergé <neoziro@gmail.com>"
+  ],
+  "description": "Primus provider for Angular.",
+  "main": "angular-primus.js",
+  "keywords": [
+    "primus",
+    "angular",
+    "provider"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "package.json",
+    "karma.conf.js",
+    "node_modules",
+    "bower_components",
+    "Gruntfile.js",
+    "test"
+  ],
+  "dependencies": {
+    "angular": ">=1.2.0"
+  },
+  "devDependencies": {
+    "angular-mocks": "~1.2.6",
+    "jquery": "~2.0.3"
+  },
+  "_release": "0.2.2",
+  "_resolution": {
+    "type": "version",
+    "tag": "v0.2.2",
+    "commit": "0c05eb5ef60bd0157f0342b82b47beeb410a7a89"
+  },
+  "_source": "git://github.com/neoziro/angular-primus.git",
+  "_target": "~0.2.2",
+  "_originalSource": "angular-primus",
+  "_direct": true
+}
